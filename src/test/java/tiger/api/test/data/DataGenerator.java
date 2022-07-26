@@ -8,13 +8,17 @@ import com.ibm.icu.text.SimpleDateFormat;
 
 
 public class DataGenerator {
+	
+	
 
 	public static String getEmail() {
 		Faker faker = new Faker();
 		return faker.name().firstName() + faker.name().lastName() + "@gmail.com";
 
 	}
-
+    
+	// This is to Generate Fake Phone number.
+	
 	public static String getPhoneNumber() {
 		Faker faker = new Faker();
 		return faker.phoneNumber().cellPhone();
@@ -25,6 +29,8 @@ public class DataGenerator {
 		return faker.name().firstName();
 	}
 
+	// This is to Generate Fake Data.
+	
 	public static String getLastName() {
 		Faker faker = new Faker();
 		return faker.name().lastName();
